@@ -8,7 +8,7 @@
     </style>
 </head>
 
-<body ng-app="todo">
+<body>
 <div id="page-wrapper" ng-controller="TodoController">
     <div class="row">
         <div class="col-lg-12">

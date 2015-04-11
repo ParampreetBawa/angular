@@ -10,6 +10,7 @@
     <asset:javascript src="underscore-min.js"/>
     <asset:javascript src="angular.min.js"/>
     <asset:javascript src="application.js"/>
+    <asset:javascript src="services.js"/>
     <!-- Bootstrap core CSS -->
     <asset:stylesheet src="bootstrap.css"/>
 
@@ -25,7 +26,7 @@
 
 <body>
 
-<div id="wrapper">
+<div id="wrapper" ng-app="todo">
 
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
