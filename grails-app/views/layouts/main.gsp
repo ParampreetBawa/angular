@@ -23,7 +23,7 @@
     <g:layoutHead/>
 </head>
 
-<body ng-app="todo">
+<body>
 
 <div id="wrapper">
 

@@ -8,11 +8,11 @@
     </style>
 </head>
 
-<body>
+<body ng-app="todo">
 <div id="page-wrapper" ng-controller="TodoController">
     <div class="row">
         <div class="col-lg-12">
-            <h1> "username" TODO's
+            <h1>TODO's
                 <small>A Blank Slate</small>
             </h1>
         </div>
