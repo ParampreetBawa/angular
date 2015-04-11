@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div id="page-wrapper">
+<div id="page-wrapper" ng-controller="TodoController">
     <div class="row">
         <div class="col-lg-12">
             <h1> "username" TODO's
@@ -21,28 +21,24 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <form name="createTodo">
+            <form name="createTodo" ng-submit="createTodo.$valid && addTodo()" novalidate>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">I need to...</h3>
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
-                            <input name="task" class="form-control" placeholder="Enter text" >
+                            <input name="task" required class="form-control" placeholder="Enter text" ng-model="task">
                         </div>
-                        <input type="submit" class="btn btn-success" value="Create"/>
+                        <input type="submit"
+                               class="btn btn-success" value="Create"/>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-lg-6">
             <ul class="list-group">
-                <li class="list-group-item">
-                    <span style="float: right"><input type="checkbox" /></span>
-                    <span style="float:right; margin-right:10px">
-                        <input type="button" value="DELETE" class="btn btn-xs btn-danger" >
-                    </span>
-                </li>
+                <my-tasks></my-tasks>
             </ul>
         </div>
     </div>

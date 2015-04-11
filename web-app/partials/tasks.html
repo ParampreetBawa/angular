@@ -1,0 +1,8 @@
+<li class="list-group-item" random-color ng-class="{strikethrough: todo.completed}"
+    ng-repeat="todo in todos track by $index">
+    {{todo.task}}
+    <span style="float: right"><input type="checkbox" ng-model="todo.completed"/></span>
+                    <span style="float:right; margin-right:10px">
+                        <input type="button" ng-click="delete($index,todo.id)" value="DELETE" class="btn btn-xs btn-danger">
+                    </span>
+</li>

@@ -7,7 +7,9 @@
     <meta name="author" content="">
 
     <title>Angular TODO - <g:layoutTitle/></title>
-
+    <asset:javascript src="underscore-min.js"/>
+    <asset:javascript src="angular.min.js"/>
+    <asset:javascript src="application.js"/>
     <!-- Bootstrap core CSS -->
     <asset:stylesheet src="bootstrap.css"/>
 
@@ -17,10 +19,11 @@
     <!-- JavaScript -->
     <asset:javascript src="jquery-1.10.2.js"/>
     <asset:javascript src="bootstrap.js"/>
+
     <g:layoutHead/>
 </head>
 
-<body>
+<body ng-app="todo">
 
 <div id="wrapper">
 
@@ -60,4 +63,7 @@
 </div><!-- /#wrapper -->
 
 </body>
+<script type="text/template" id="my-selector">
+ {{data}}
+</script>
 </html>
