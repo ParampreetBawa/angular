@@ -1,4 +1,17 @@
-var app = angular.module('todo',[]);
+var app = angular.module('todo',['ui.router']);
+app.config(function($stateProvider,$urlRouterProvider){
+    $urlRouterProvider.otherwise('/todo');
+    $stateProvider
+        .state('todo',{
+            url:'/todo',
+            templateUrl:'partials/todo.html'
+        })
+
+        .state('collection',{
+            url:'/collection',
+            templateUrl:'partials/collection.html'
+        });
+});
 
 app.controller("TodoController",["$scope","$http",function($scope,$http){
     $scope.todos = [];

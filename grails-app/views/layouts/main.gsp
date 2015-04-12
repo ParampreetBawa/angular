@@ -9,6 +9,8 @@
     <title>Angular TODO - <g:layoutTitle/></title>
     <asset:javascript src="underscore-min.js"/>
     <asset:javascript src="angular.min.js"/>
+    <asset:javascript src="angular-ui-router.js"/>
+
     <asset:javascript src="application.js"/>
     <asset:javascript src="services.js"/>
     <!-- Bootstrap core CSS -->
@@ -45,12 +47,12 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="/index.html">
+                    <a ui-sref="todo">
                         <i class="fa fa-check-square-o"></i> Todo's
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a ui-sref="collection">
                         <i class="fa fa-tasks"></i> Collection's
                     </a>
                 </li>
