@@ -24,7 +24,7 @@
             <form name="createTodo" ng-submit="createTodo.$valid && addTodo()" novalidate>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title">I need to...</h3>
+                        <h3 class="panel-title">I need to do {{task}}</h3>
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
